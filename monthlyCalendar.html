@@ -1,0 +1,76 @@
+<!-- JUST WANT TO MAKE IT CLEAR THAT I'M CURRENTLY FASHIONING THIS CALENDAR AFTER APPLE'S CALENDAR APP... -->
+<!-- TODO:
+    1- CREATE (FULLSCREEN) FULL-YEAR-OVERVIEW HTML, CSS AND JAVASCRIPT FILES
+    2- CREATE (SCROLLABLE) FULL-YEAR-DETAILED-VIEW HTML, CSS AND JAVASCRIPT FILES
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/monthlyCalendar.css">
+    <title> Monthly Calendar</title>
+</head>
+<body>
+    <header>
+        <button
+        id="full-year-overview-button"
+        onclick="//CREATE A FUNCTION IN MONTHLYCALENDAR.JS TO SHIFT VIEW TO YEARLYCALENDAR.HTML"
+        >
+            <img src="images/left_arrow.png" alt="left arrow" class="left_arrow"><!--CAN ALSO PLACE THE CURRENT OR CHOSEN MONTH AND YEAR HERE, IF PREFFERABLE-->
+            <p id="selected-month-year"></p>
+        </button>
+
+        <button
+        id="full-year-detailed-view-button"
+        class=""
+        onclick="//CREATE A FUNCTION IN MONTHLYCALENDAR.JS TO SHIFT VIEW TO DETAILEDYEARLYCALENDAR.HTML"
+        >
+            <div id="full-year-image">
+                <img src="images/calendar.png" alt="calendar icon" class="calendar">
+                <img src="images/down_arrow.png" alt="down arrow" class="down_arrow">
+            </div><!-- PLACE A SYMBOL (OR TWO) TO SIGNIFY A CALENDAR WITH A DOWN ARROW/CHEVRON BELOW IT -->
+        </button>
+
+        <button
+        id="hide-full-year-detailed-view-button"
+        class="hidden"
+        onclick="//CREATE A FUNCTION IN MONTHLYCALENDAR.JS TO SHIFT VIEW BACK TO MONTHLYCALENDAR.HTML"
+        >
+            <div id="hide-full-year-image">
+                <img src="images/up_arrow.png" alt="up arrow" class="up_arrow">
+                <img src="images/calendar.png" alt="calendar icon" class="calendar">
+            </div><!-- PLACE A SYMBOL (OR TWO) TO SIGNIFY A CALENDAR WITH A DOWN ARROW/CHEVRON BELOW IT -->
+        </button>
+
+        <button
+        id="search-button"
+        onclick="//CREATE A FUNCTION IN MONTHLYCALENDAR.JS TO SHIFT THE BUTTON OUT OF VIEW AND BRING THE SEARCH BAR INTO VIEW"
+        >
+            <img src="images/search.png" alt="magnifying glass" class="search">
+        </button>
+
+        <button id="add-event-button">
+            <img src="images/close.png" alt="plus sign" class="add-event">
+        </button>
+    </header>
+    <main class="monthly-calendar">
+        <section id="day-names">
+            <p>Sun</p>
+            <p>Mon</p>
+            <p>Tue</p>
+            <p>Wed</p>
+            <p>Thu</p>
+            <p>Fri</p>
+            <p>Sat</p>
+        </section>
+        <section id="days">
+            
+        </section>
+        <p>Calendar Placeholder</p>
+    </main>
+
+    <script src="js/monthlyCalendar.js"></script>
+</body>
+</html>

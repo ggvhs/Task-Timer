@@ -1,0 +1,80 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    border: 5px solid blue;
+}
+header button {
+    background:transparent;
+    border: none;
+}
+header img {
+    height: 3vh;
+    justify-content: center;
+    align-content: center;
+}
+/* .left-arrow { */
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* justify-self: center; */
+    /* justify-items: center; */
+    /* align-items: center; */
+    /* align-self: center; */
+    /* align-content: center; */
+/* } */
+.hidden {
+    display: none;
+}
+#full-year-overview-button {
+    display: flex;
+    flex-direction: row;
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* justify-self: center; */
+    /* justify-items: center; */
+    align-items: center;
+    align-self: center;
+    /* align-content: center; */
+    /* border: 2px solid red; */
+}
+#full-year-overview-button p {
+    font-size: 2ch;
+    /* border: 2px solid red; */
+}
+/* .calendar, .up_arrow, .down_arrow {
+    margin: 0;
+    padding: 0;
+} */
+.calendar {
+    margin-bottom: -6px;
+}
+
+#hide-full-year-image {
+    display: flex;
+    flex-direction: column;
+}
+#full-year-image {
+    display: flex;
+    flex-direction: column;
+
+}
+.add-event {
+    transform: rotate(45deg);
+}
+.monthly-calendar {
+    border: 5px solid blue;
+}
+#day-names {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 12pt;
+    font-weight: bold;
+    border: 2px solid red;
+}
+/* @media (max-width: 900px) {
+    header img {
+        height: 2vh;
+    }
+} */
